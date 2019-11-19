@@ -60,7 +60,7 @@ function nextPrev(n) {
   if (currentTab >= x.length) {
     // ... the form gets submitted:
     document.getElementById("regForm").submit();
-    window.location("https://dvir6993.github.io/deco1016-website/endpoint.html");
+    window.open("https://dvir6993.github.io/deco1016-website/endpoint.html");
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
