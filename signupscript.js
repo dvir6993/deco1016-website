@@ -59,6 +59,7 @@ function nextPrev(n) {
   if (currentTab >= x.length) {
     // ... the form gets submitted:
     document.getElementById("regForm").submit();
+    window.open("https://dvir6993.github.io/deco1016-website/endpoint.html")
     return false;
   }
   // Otherwise, display the correct tab:
@@ -78,7 +79,7 @@ function validateForm() {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       // and set the current valid status to false
-      window.open("https://dvir6993.github.io/deco1016-website/endpoint.html")
+      valid = false;
     }
   }
   // If the valid status is true, mark the step as finished and valid:
