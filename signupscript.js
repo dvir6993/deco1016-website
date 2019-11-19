@@ -39,6 +39,7 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
+    window.location("https://dvir6993.github.io/deco1016-website/endpoint.html");
     
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
