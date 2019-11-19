@@ -85,7 +85,6 @@ function validateForm() {
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
-  window.open("https://dvir6993.github.io/deco1016-website/endpoint.html");
   return valid; // return the valid status
   
 }
