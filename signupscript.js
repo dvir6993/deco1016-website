@@ -39,6 +39,7 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
+    
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
@@ -58,10 +59,11 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    document.getElementById("regForm").submit(); 
+    document.getElementById("regForm").submit();
+    return false;
   }
   // Otherwise, display the correct tab:
-  window.open("https://dvir6993.github.io/deco1016-website/endpoint.html");
+  showTab(currentTab);
 }
 
 function validateForm() {
@@ -83,7 +85,9 @@ function validateForm() {
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
+  window.open("https://dvir6993.github.io/deco1016-website/endpoint.html");
   return valid; // return the valid status
+  
 }
 
 function fixStepIndicator(n) {
