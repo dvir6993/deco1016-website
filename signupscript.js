@@ -57,13 +57,11 @@ function nextPrev(n) {
   currentTab = currentTab + n;
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
-    window.open("https://dvir6993.github.io/deco1016-website/endpoint.html") 
     // ... the form gets submitted:
   document.getElementById("regForm").submit();
-
   }
   // Otherwise, display the correct tab:
-  showTab(currentTab);
+  window.open("https://dvir6993.github.io/deco1016-website/endpoint.html") 
 }
 
 function validateForm() {
