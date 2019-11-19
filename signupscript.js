@@ -58,12 +58,10 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
-    window.open("https://dvir6993.github.io/deco1016-website/endpoint.html"); 
+    document.getElementById("regForm").submit(); 
   }
   // Otherwise, display the correct tab:
-  showTab(currentTab);
+  window.open("https://dvir6993.github.io/deco1016-website/endpoint.html");
 }
 
 function validateForm() {
